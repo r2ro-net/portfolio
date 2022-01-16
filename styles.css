@@ -1,0 +1,96 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #FFBBBB
+    }
+
+    25% {
+        background-color: #FFFCA8
+    }
+
+    50% {
+        background-color: #CFFFB9
+    }
+
+    75% {
+        background-color: #BAFBFF
+    }
+
+    100% {
+        background-color: #DCB0FF
+    }
+}
+
+@font-face {
+  font-family: terminalGrotesque;
+  src: url(assets/fonts/terminal-grotesque-webfont.woff);
+}
+
+.random-colors {
+    -webkit-animation: bgcolor 2s infinite;
+    animation: bgcolor 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.illustration-text {
+  color: #001AFF;
+  font-size: 24px;
+  font-family: terminalGrotesque;
+  height: 20vh;
+}
+
+a:hover {
+  color: #42FF00;
+}
+
+.work-text {
+  color: #001AFF;
+  font-size: 24px;
+  font-family: terminalGrotesque;
+  height: 80vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  -webkit-transform: rotate(-180deg);
+}
+
+.about-text {
+  color: #001AFF;
+  font-size: 24px;
+  font-family: terminalGrotesque;
+  height: 80vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+#illustrations-box {
+  width: 628px;
+  height: 478px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px;
+  display: none;
+}
+
+.active-box {
+  color: #42FF00;
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*transform: translateY(100%);*/
+}
+
+.work{
+  display: none;
+}
+
+.about{
+  display: none;
+}
