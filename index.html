@@ -2,25 +2,113 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
     <title>r2ro</title>
   </head>
   <body>
     <section class="hero random-colors is-fullheight">
         <div class="columns m-3">
           <div class="column is-1 has-text-centered work-text"><a>work</a></div>
-          <div class="column is-10 has-text-centered illustration-text"><a>illustration</a></div>
+          <div class="column is-10 has-text-centered illustration-text"><a id="illustration-button">illustration</a></div>
           <div class="column is-1 has-text-centered about-text"><a>about/contact</a></div>
         </div>
     </section>
-    <section class="hero frame illustrations is-fullheight">
-        illustrations
+    <section class="hero frame is-fullheight" id="illustrations">
+      <div class="container is-fluid">
+          <div class="columns">
+              <div class="column">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/17242993/media/90ed5d289f7894ba81be3ff01f71ccc2.jpg?compress=1&resize=800x600&vertical=top" onclick="openModal();currentSlide(1)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393733/media/0ea2aa6098b1b770ff6cf98aa07fcd97.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(5)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393590/media/bfcf0ff79fe8f58ebab410d16177f95d.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(9)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16392521/media/d368fe13299352edce0235eb69f81406.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(13)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/13842737/media/14c451a0b205b61eaf7a4bd487a620e5.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(17)">
+              </div>
+              <div class="column">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16668193/media/831acf81eed91ecf5813911807e8fe53.png?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(2)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393250/media/06314424f36c03e520d19082754fad07.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(6)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393162/media/5c4d671b822e30c5d06f2ee271d7532c.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(10)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/13843158/media/98b53d280664b098627f1ae8d07d6d03.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(14)">
+              </div>
+              <div class="column">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16428561/media/e966f22f678ca178467c5af22ea2bf29.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(3)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393752/media/4ec290eb12357aace948db761f09393d.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(7)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393741/media/05d7554dec5a92e4732634521698791c.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(11)">
+                  <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393001/media/b1630e86cfc8807eb4d7e4f015ee6e34.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(15)">
+              </div>
+              <div class="column">
+                <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16393842/media/943702255cfae3bb3e1dc9f1ddc172ce.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(4)">
+                <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/13842698/media/661c78d2d37dbdea4df2e785a1f82151.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(8)">
+                <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16392429/media/69eaab518cb9d6e2629746654fef9359.png?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(12)">
+                <img class="gallery-img" src="https://cdn.dribbble.com/users/2056345/screenshots/16392887/media/ac5f31366aa65c333ed80cedee1665dc.jpg?compress=1&resize=1200x900&vertical=top" onclick="openModal();currentSlide(16)">
+
+              </div>
+          </div>
+          <div class="modal" id="myModal">
+              <div class="modal-content is-vcentered">
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/17242993/media/90ed5d289f7894ba81be3ff01f71ccc2.jpg?compress=1&resize=800x600&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16668193/media/831acf81eed91ecf5813911807e8fe53.png?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16428561/media/e966f22f678ca178467c5af22ea2bf29.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393842/media/943702255cfae3bb3e1dc9f1ddc172ce.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393733/media/0ea2aa6098b1b770ff6cf98aa07fcd97.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393250/media/06314424f36c03e520d19082754fad07.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393752/media/4ec290eb12357aace948db761f09393d.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/13842698/media/661c78d2d37dbdea4df2e785a1f82151.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393590/media/bfcf0ff79fe8f58ebab410d16177f95d.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393162/media/5c4d671b822e30c5d06f2ee271d7532c.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393741/media/05d7554dec5a92e4732634521698791c.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16392429/media/69eaab518cb9d6e2629746654fef9359.png?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16392521/media/d368fe13299352edce0235eb69f81406.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/13843158/media/98b53d280664b098627f1ae8d07d6d03.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16393001/media/b1630e86cfc8807eb4d7e4f015ee6e34.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/16392887/media/ac5f31366aa65c333ed80cedee1665dc.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+                <div class="item-slide">
+                  <img src="https://cdn.dribbble.com/users/2056345/screenshots/13842737/media/14c451a0b205b61eaf7a4bd487a620e5.jpg?compress=1&resize=1200x900&vertical=top">
+                </div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <button onclick="closeModal()" class="modal-close is-large" aria-label="close"></button>
+          </div>
+      </div>
     </section>
     <section class="hero frame work is-fullheight">
         work

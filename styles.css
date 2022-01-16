@@ -25,6 +25,19 @@
   src: url(assets/fonts/terminal-grotesque-webfont.woff);
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 .random-colors {
     -webkit-animation: bgcolor 2s infinite;
     animation: bgcolor 2s infinite;
@@ -65,17 +78,6 @@ a:hover {
   text-orientation: mixed;
 }
 
-#illustrations-box {
-  width: 628px;
-  height: 478px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px; /* Negative half of height. */
-  margin-left: -250px;
-  display: none;
-}
-
 .active-box {
   color: #42FF00;
 }
@@ -84,13 +86,28 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y:scroll;
+  height:100%;
   /*transform: translateY(100%);*/
 }
 
-.work{
+#illustrations {
+  display: none;
+  margin: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 4vh;
+}
+
+.work {
   display: none;
 }
 
-.about{
+.about {
   display: none;
+}
+
+.gallery-img {
+  width: 356px;
+  height: 356px;
+  object-fit:cover;
 }
