@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("a").click(function(){
+  $("#illustration-button").click(function(){
     var x = document.getElementById("illustrations");
     if (x.style.display === "none" || x.style.display === "") {
       x.style.display = "block";
