@@ -25,7 +25,7 @@
   src: url(assets/fonts/terminal-grotesque-webfont.woff);
 }
 
-html {
+html, body {
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -60,7 +60,7 @@ html {
 
 .illustration-text {
   color: #001AFF;
-  font-size: 24px;
+  font-size: 40px;
   font-family: terminalGrotesque;
 }
 
@@ -70,7 +70,7 @@ a:hover {
 
 .work-text {
   color: #001AFF;
-  font-size: 24px;
+  font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
   writing-mode: vertical-rl;
@@ -80,7 +80,7 @@ a:hover {
 
 .about-text {
   color: #001AFF;
-  font-size: 24px;
+  font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
   writing-mode: vertical-rl;
