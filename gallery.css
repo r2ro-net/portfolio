@@ -91,9 +91,7 @@
 }
 
 .modal-content {
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    margin-top: 25vh;
 }
 
 @media screen and (min-width: 1024px) {
