@@ -14,10 +14,18 @@
   </head>
   <body>
     <section class="hero random-colors is-fullheight">
+      <nav class="navbar" id="welcome-message" role="navigation" aria-label="main navigation">
+        <p class="marquee">
+          <span>/// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net </span>
+        </p>
+        <p class="marquee marquee2">
+          <span>/// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net /// welcome to r2ro.net </span>
+        </p>
+      </nav>
         <div class="columns m-3">
-          <div class="column is-1 has-text-centered work-text"><a>work</a></div>
+          <div class="column is-1 has-text-centered work-text"><a id="work-button">work</a></div>
           <div class="column is-10 has-text-centered illustration-text"><a id="illustration-button">illustration</a></div>
-          <div class="column is-1 has-text-centered about-text"><a>about/contact</a></div>
+          <div class="column is-1 has-text-centered about-text"><a id="about-button">about/contact</a></div>
         </div>
     </section>
     <section class="hero frame is-fullheight" id="illustrations">
@@ -110,10 +118,10 @@
           </div>
       </div>
     </section>
-    <section class="hero frame work is-fullheight">
+    <section class="hero frame is-fullheight" id="work">
         work
     </section>
-    <section class="hero frame about is-fullheight">
+    <section class="hero frame is-fullheight" id="about">
         about/contact
     </section>
   </body>

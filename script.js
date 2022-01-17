@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $("#illustration-button").click(function(){
     var x = document.getElementById("illustrations");
     if (x.style.display === "none" || x.style.display === "") {
@@ -9,6 +10,7 @@ $(document).ready(function(){
       $("#illustration-button").removeClass("active-box");
     }
   });
+
 });
 
 function openModal() {

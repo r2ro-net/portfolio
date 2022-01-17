@@ -72,7 +72,6 @@
 
 .item-slide img {
   max-width: 1200px;
-  height: 900px;
 }
 
 .caption-container {
@@ -81,4 +80,8 @@
 
 .column img{
   margin-top: 20px;
+}
+
+.modal-close {
+ margin-top: 80px;
 }
