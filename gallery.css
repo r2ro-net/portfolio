@@ -20,11 +20,13 @@
   position: relative;
   background-color: rgba(0,0,0,0);
   width: 90%;
+  height: 100%;
   max-width: 1200px;
   max-height: 700vh;
   overflow: hidden;
   text-align: center;
   padding-top: 6vh;
+}
 }
 
 .modal img {
@@ -70,10 +72,6 @@
   top: 0;
 }
 
-.item-slide img {
-  max-width: 1200px;
-}
-
 .caption-container {
   color: white;
 }
@@ -84,4 +82,25 @@
 
 .modal-close {
  margin-top: 80px;
+}
+
+.gallery-img {
+  width: 520px;
+  height: 520px;
+  object-fit:cover;
+}
+
+.modal-content {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+  .item-slide img {
+    max-width: 1200px ;
+  }
+  .modal-content {
+    margin-top: 10vh;
+  }
 }

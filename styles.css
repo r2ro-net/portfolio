@@ -64,6 +64,12 @@ html, body {
   font-family: terminalGrotesque;
 }
 
+.net {
+  color: #42FF00;
+  text-decoration: underline wavy;
+  text-decoration-thickness: 3px;
+}
+
 a:hover {
   color: #42FF00;
 }
@@ -102,9 +108,8 @@ a:hover {
 
 #illustrations {
   display: none;
-  margin: 15vh;
-  padding-bottom: 10vh;
-  padding-left: 4vh;
+  margin-top: 15vh;
+  padding-bottom: 25vh;
 }
 
 #work {
@@ -113,12 +118,6 @@ a:hover {
 
 #about {
   display: none;
-}
-
-.gallery-img {
-  width: 356px;
-  height: 356px;
-  object-fit:cover;
 }
 
 .marquee {
@@ -144,5 +143,11 @@ a:hover {
   }
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #illustrations {
+    margin: 20vh 10vh !important;
   }
 }
