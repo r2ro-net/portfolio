@@ -46,6 +46,7 @@ html, body {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -53,15 +54,9 @@ html, body {
 #welcome-message {
   height: 80px;
   background-color: #2033F9 !important;
-  font-size: 56px;
+  font-size: 54px;
   font-family: terminalGrotesque;
   color: #FFFFFF;
-}
-
-.illustration-text {
-  color: #001AFF;
-  font-size: 40px;
-  font-family: terminalGrotesque;
 }
 
 .net {
@@ -70,12 +65,20 @@ html, body {
   text-decoration-thickness: 3px;
 }
 
+a{
+  color: #2033F9;
+}
+
 a:hover {
   color: #42FF00;
 }
 
+.illustration-text {
+  font-size: 40px;
+  font-family: terminalGrotesque;
+}
+
 .work-text {
-  color: #001AFF;
   font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
@@ -85,7 +88,6 @@ a:hover {
 }
 
 .about-text {
-  color: #001AFF;
   font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
@@ -114,10 +116,60 @@ a:hover {
 
 #work {
   display: none;
+  margin-top: 15vh;
+  padding-bottom: 25vh;
+}
+
+.modal-close{
+  background-color: red;
+}
+
+.work-prev, .work-next{
+  color: #2033F9 !important;
 }
 
 #about {
   display: none;
+}
+
+.vertical {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card-header {
+  box-shadow: none;
+}
+
+.card-image {
+  padding: 1.5rem;
+}
+
+.fa-times {
+  color: #FF5F5F;
+}
+
+.about-title {
+  font-size: 47px;
+  font-family: terminalGrotesque;
+  color: #001AFF;
+  font-weight: 400;
+  margin-bottom: 0 !important;
+}
+
+.about-description {
+  color: #001AFF;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.about-contact{
+  color: #72F920;
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .marquee {
@@ -146,8 +198,57 @@ a:hover {
   }
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  background: transparent !important;
+}
+
+.socials {
+  margin-right: 1.5rem;
+  color: #1F33F9;
+}
+
+#work-caption {
+  color: #2030F9;
+  font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (min-width: 1024px) {
-  #illustrations {
+  #illustrations , #work{
     margin: 20vh 10vh !important;
+  }
+
+  .item-slide img{
+    max-width: 900px !important;
+  }
+
+  .work-slide img{
+    max-height: 600px !important;
+  }
+
+  #about {
+    margin: 20vh 30vh !important;
+    width: 60% !important;
+  }
+
+  .card{
+    max-width: 80%;
+    margin-left: 20vh;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  #about{
+    width: 100%;
+    margin-top: 40vh;
   }
 }
