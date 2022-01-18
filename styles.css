@@ -28,6 +28,10 @@
 html, body {
     overflow: scroll;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
 }
 
 
@@ -120,11 +124,15 @@ a:hover {
   padding-bottom: 25vh;
 }
 
-.modal-close{
-  background-color: red;
+.modal {
+  background-color: #FFFFFF !important;
 }
 
-.work-prev, .work-next{
+.modal-close{
+  background-color: #FF9B9B !important;
+}
+
+.prev, .next{
   color: #2033F9 !important;
 }
 
@@ -217,8 +225,17 @@ a:hover {
 #work-caption {
   color: #2030F9;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
+#work-caption a {
+  text-decoration: underline wavy;
+}
+
+#work-caption span {
+  font-family: terminalGrotesque;
+  font-size: 25px;
+}
 @media screen and (min-width: 1024px) {
   #illustrations , #work{
     margin: 20vh 10vh !important;
@@ -251,4 +268,8 @@ a:hover {
     width: 100%;
     margin-top: 40vh;
   }
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
 }

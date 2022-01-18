@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/script.js"></script>
     <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,8 +17,8 @@
     <link rel="stylesheet" href="gallery.css">
     <title>r2ro</title>
   </head>
-  <body>
-    <section class="hero random-colors is-fullheight">
+  <body class="random-colors">
+    <section class="hero frame is-fullheight" style="width: 100%;">
       <nav class="navbar" id="welcome-message" role="navigation" aria-label="main navigation">
         <p class="marquee">
           <span>/// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net </a> </span>
@@ -23,11 +27,11 @@
           <span>/// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net</a> /// welcome to <a class="net">r2ro.net </a> </span>
         </p>
       </nav>
-        <div class="columns m-3">
-          <div class="column is-1 has-text-centered work-text"><a id="work-button">work</a></div>
-          <div class="column is-10 has-text-centered illustration-text"><a id="illustration-button">illustration</a></div>
-          <div class="column is-1 has-text-centered about-text"><a id="about-button">about/contact</a></div>
-        </div>
+      <div class="columns">
+        <div class="column is-1 has-text-centered work-text"><a id="work-button">work</a></div>
+        <div class="column is-10 has-text-centered illustration-text"><a id="illustration-button">illustration</a></div>
+        <div class="column is-1 has-text-centered about-text"><a id="about-button">about/contact</a></div>
+      </div>
     </section>
     <section class="hero frame is-fullheight" id="illustrations">
       <div class="container is-fluid">
@@ -176,31 +180,31 @@
               </figure>
             </div>
           </div>
-          <div class="modal is-vcentered" id="workModal" style="background-color: #FFFFFF !important;">
+          <div class="modal is-vcentered" id="workModal">
             <div class="modal-content">
               <div class="work-slide">
                 <img src="assets/img/TodoParaSiempre.png">
-                <p id="work-caption">// Todo para siempre //<br> Illustration and graphix for the remixed album of Reaccion Concava's at Discos Deleite</p>
+                <p id="work-caption"><span >// Todo para siempre //</span><br> Illustration and graphix for the remixed album of Reaccion Concava's at Discos Deleite</p>
               </div>
               <div class="work-slide">
                 <img src="assets/img/BlackCherryDribble2.png">
-                <p id="work-caption">// BlackCherry<br>Video visualizer for Sarah Silva's song Black Cherry<br>watch it here https://youtu.be/7nmFoWRpgFM </p>
+                <p id="work-caption"><span >// BlackCherry //</span><br>Video visualizer for Sarah Silva's song Black Cherry<br>watch it <a href="https://youtu.be/7nmFoWRpgFM" target="_blank"> here.</a> </p>
               </div>
               <div class="work-slide">
                 <img src="assets/img/Chiflando2.jpg">
-                <p id="work-caption">// Otra canción<br>3D illustration and visualizer for Sobrino's song Otra Canción<br>watch it here https://youtu.be/2rUwpO_pI8I</p>
+                <p id="work-caption"><span >// Otra canción //</span><br>3D illustration and visualizer for Sobrino's song Otra Canción<br>watch it <a href="https://youtu.be/2rUwpO_pI8I" target="_blank"> here. </a> </p>
               </div>
               <div class="work-slide">
                 <img src="assets/img/CariñitoImagen-01.jpg">
-                <p id="work-caption">// Cariñito<br>As a part of my final thesis project where I was working on defining virtual reality's characteristics as a narrative medium I created "Cariñito", a VR experience about my personal relationship with my father and how generational trauma and the absent father figure defined our lives and the relationships with out fathers. you can learn more about the ongoing project here.<br> https://drive.google.com/drive/folders/1GzC3GPuGmc8YGuALgIJ5onXucblmWJBe?usp=sharing <p>
+                <p id="work-caption"><span >// Cariñito //</span><br>As a part of my final thesis project where I was working on defining virtual reality's characteristics as a narrative medium I created "Cariñito", a VR experience about my personal relationship with my father and how generational trauma and the absent father figure defined our lives and the relationships with out fathers. you can learn more about the ongoing project<a href="https://drive.google.com/drive/folders/1GzC3GPuGmc8YGuALgIJ5onXucblmWJBe?usp=sharing" target="_blank"> here.</a><p>
               </div>
               <div class="work-slide">
                 <img src="assets/img/FamilyReworks.png">
-                <p id="work-caption">// Family Reworks<br>Illustration and graphix for the annual compilation of Discos Deleite's. You can download the free compilation here <br>https://discosdeleite.bandcamp.com/album/family-reworks-2020-free-compilation </p>
+                <p id="work-caption"><span >// Family Reworks //</span><br>Illustration and graphix for the annual compilation of Discos Deleite's. You can download the free compilation <a href="https://discosdeleite.bandcamp.com/album/family-reworks-2020-free-compilation" target="_blank">here </a></p>
               </div>
               <div class="work-slide">
                 <img src="assets/img/DribbleMHAD-01.png">
-                <p id="work-caption">// Take care of your brain<br>Illustration created for the Mental Health Action Day Creative Jam</p>
+                <p id="work-caption"><span >// Take care of your brain //</span><br>Illustration created for the Mental Health Action Day Creative Jam</p>
               </div>
             </div>
             <a class="prev work-prev" onclick="plusSlides(-1, 'work')">&#10094;</a>
