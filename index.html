@@ -141,7 +141,72 @@
         </div>
       </section>
       <section class="hero frame is-fullheight" id="work">
-          work
+        <div class="container is-fluid">
+          <div class="columns is-multiline is-centered">
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/PortadaTodoParaSiempre-06.jpg" onclick="openModal('work');currentSlide(1, 'work')">
+              </figure>
+            </div>
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/BlackCherryDribble.png" onclick="openModal('work');currentSlide(2, 'work')">
+              </figure>
+            </div>
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/Chiflando.jpg" onclick="openModal('work');currentSlide(3, 'work')">
+              </figure>
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/Cariñito-01.jpg" onclick="openModal('work');currentSlide(4, 'work')">
+              </figure>
+            </div>
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/FamilyReworks2020_1920x1920.jpg" onclick="openModal('work');currentSlide(5, 'work')">
+              </figure>
+            </div>
+            <div class="column is-4 is-4-fullhd is-4-desktop is-10-tablet is-12-mobile">
+              <figure class="image is-inline-block">
+                <img class="gallery-img" src="assets/img/IA_CJ_ArturoRobles.jpg" onclick="openModal('work');currentSlide(6, 'work')">
+              </figure>
+            </div>
+          </div>
+          <div class="modal is-vcentered" id="workModal" style="background-color: #FFFFFF !important;">
+            <div class="modal-content">
+              <div class="work-slide">
+                <img src="assets/img/TodoParaSiempre.png">
+                <p id="work-caption">// Todo para siempre //<br> Illustration and graphix for the remixed album of Reaccion Concava's at Discos Deleite</p>
+              </div>
+              <div class="work-slide">
+                <img src="assets/img/BlackCherryDribble2.png">
+                <p id="work-caption">// BlackCherry<br>Video visualizer for Sarah Silva's song Black Cherry<br>watch it here https://youtu.be/7nmFoWRpgFM </p>
+              </div>
+              <div class="work-slide">
+                <img src="assets/img/Chiflando2.jpg">
+                <p id="work-caption">// Otra canción<br>3D illustration and visualizer for Sobrino's song Otra Canción<br>watch it here https://youtu.be/2rUwpO_pI8I</p>
+              </div>
+              <div class="work-slide">
+                <img src="assets/img/CariñitoImagen-01.jpg">
+                <p id="work-caption">// Cariñito<br>As a part of my final thesis project where I was working on defining virtual reality's characteristics as a narrative medium I created "Cariñito", a VR experience about my personal relationship with my father and how generational trauma and the absent father figure defined our lives and the relationships with out fathers. you can learn more about the ongoing project here.<br> https://drive.google.com/drive/folders/1GzC3GPuGmc8YGuALgIJ5onXucblmWJBe?usp=sharing <p>
+              </div>
+              <div class="work-slide">
+                <img src="assets/img/FamilyReworks.png">
+                <p id="work-caption">// Family Reworks<br>Illustration and graphix for the annual compilation of Discos Deleite's. You can download the free compilation here <br>https://discosdeleite.bandcamp.com/album/family-reworks-2020-free-compilation </p>
+              </div>
+              <div class="work-slide">
+                <img src="assets/img/DribbleMHAD-01.png">
+                <p id="work-caption">// Take care of your brain<br>Illustration created for the Mental Health Action Day Creative Jam</p>
+              </div>
+            </div>
+            <a class="prev work-prev" onclick="plusSlides(-1, 'work')">&#10094;</a>
+            <a class="next work-next" onclick="plusSlides(1, 'work')">&#10095;</a>
+            <button onclick="closeModal('work')" class="modal-close is-large" aria-label="close"></button>
+          </div>
       </section>
       <section class="frame is-fullheight"  id="about">
         <div class="container is-fluid">
@@ -157,17 +222,15 @@
                 </header>
                 <div class="card-image">
                   <figure class="image image is-2by1">
-                    <img style="object-fit: cover;" src="https://cdn.dribbble.com/users/2056345/screenshots/13842698/media/661c78d2d37dbdea4df2e785a1f82151.jpg" alt="Placeholder image">
+                    <img style="object-fit: cover;" src="https://cdn.dribbble.com/users/2056345/screenshots/17242993/media/90ed5d289f7894ba81be3ff01f71ccc2.jpg?compress=1&resize=800x600&vertical=top" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="content about-content">
                     <p class="about-title">//r2ro</p>
                     <p class="about-description roboto"> human, 3d artist and digital related stuff</p>
+                    <a href="mailto:r2ro.net@gmail.com" class="about-contact Roboto">contact: r2ro.net@gmail.com</a>
                   </div>
-                  <footer class="card-footer">
-                    <a href="mailto:r2ro.net@gmail.com" class="card-footer-item about-contact">contact: r2ro.net@gmail.com</a>
-                  </footer>
                   </div>
                 </div>
               </div>

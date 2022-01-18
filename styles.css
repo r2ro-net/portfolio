@@ -65,18 +65,20 @@ html, body {
   text-decoration-thickness: 3px;
 }
 
+a{
+  color: #2033F9;
+}
+
 a:hover {
   color: #42FF00;
 }
 
 .illustration-text {
-  color: #001AFF;
   font-size: 40px;
   font-family: terminalGrotesque;
 }
 
 .work-text {
-  color: #001AFF;
   font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
@@ -86,7 +88,6 @@ a:hover {
 }
 
 .about-text {
-  color: #001AFF;
   font-size: 40px;
   font-family: terminalGrotesque;
   height: 90vh;
@@ -115,6 +116,16 @@ a:hover {
 
 #work {
   display: none;
+  margin-top: 15vh;
+  padding-bottom: 25vh;
+}
+
+.modal-close{
+  background-color: red;
+}
+
+.work-prev, .work-next{
+  color: #2033F9 !important;
 }
 
 #about {
@@ -157,9 +168,8 @@ a:hover {
 
 .about-contact{
   color: #72F920;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 400;
-  font-family: terminalGrotesque;
 }
 
 .marquee {
@@ -204,8 +214,13 @@ a:hover {
   color: #1F33F9;
 }
 
+#work-caption {
+  color: #2030F9;
+  font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (min-width: 1024px) {
-  #illustrations{
+  #illustrations , #work{
     margin: 20vh 10vh !important;
   }
 
@@ -213,14 +228,20 @@ a:hover {
     max-width: 900px !important;
   }
 
+  .work-slide img{
+    max-height: 600px !important;
+  }
+
   #about {
-    margin: 20vh 40vh !important;
+    margin: 20vh 30vh !important;
     width: 60% !important;
   }
 
   .card{
     max-width: 80%;
     margin-left: 20vh;
+    border-radius: 0;
+    box-shadow: 0;
   }
 
 }
