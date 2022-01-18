@@ -85,9 +85,7 @@
 }
 
 .gallery-img {
-  width: 520px;
-  height: 520px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .modal-content {
