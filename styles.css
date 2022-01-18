@@ -188,9 +188,29 @@ a:hover {
   }
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  background: transparent !important;
+}
+
+.socials {
+  margin-right: 1.5rem;
+  color: #1F33F9;
+}
+
 @media screen and (min-width: 1024px) {
   #illustrations{
     margin: 20vh 10vh !important;
+  }
+
+  .item-slide img{
+    max-width: 900px !important;
   }
 
   #about {
@@ -202,6 +222,7 @@ a:hover {
     max-width: 80%;
     margin-left: 20vh;
   }
+
 }
 
 @media screen and (min-width: 769px) {
