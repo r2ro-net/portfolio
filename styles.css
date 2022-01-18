@@ -46,6 +46,7 @@ html, body {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -53,15 +54,9 @@ html, body {
 #welcome-message {
   height: 80px;
   background-color: #2033F9 !important;
-  font-size: 56px;
+  font-size: 54px;
   font-family: terminalGrotesque;
   color: #FFFFFF;
-}
-
-.illustration-text {
-  color: #001AFF;
-  font-size: 40px;
-  font-family: terminalGrotesque;
 }
 
 .net {
@@ -72,6 +67,12 @@ html, body {
 
 a:hover {
   color: #42FF00;
+}
+
+.illustration-text {
+  color: #001AFF;
+  font-size: 40px;
+  font-family: terminalGrotesque;
 }
 
 .work-text {
@@ -120,6 +121,47 @@ a:hover {
   display: none;
 }
 
+.vertical {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card-header {
+  box-shadow: none;
+}
+
+.card-image {
+  padding: 1.5rem;
+}
+
+.fa-times {
+  color: #FF5F5F;
+}
+
+.about-title {
+  font-size: 47px;
+  font-family: terminalGrotesque;
+  color: #001AFF;
+  font-weight: 400;
+  margin-bottom: 0 !important;
+}
+
+.about-description {
+  color: #001AFF;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.about-contact{
+  color: #72F920;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: terminalGrotesque;
+}
+
 .marquee {
   margin: 0 auto;
   white-space: nowrap;
@@ -147,7 +189,24 @@ a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  #illustrations {
+  #illustrations{
     margin: 20vh 10vh !important;
+  }
+
+  #about {
+    margin: 20vh 40vh !important;
+    width: 60% !important;
+  }
+
+  .card{
+    max-width: 80%;
+    margin-left: 20vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #about{
+    width: 100%;
+    margin-top: 40vh;
   }
 }

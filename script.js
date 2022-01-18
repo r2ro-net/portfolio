@@ -1,17 +1,42 @@
 $(document).ready(function(){
+  let i = document.getElementById("illustrations");
+  let a = document.getElementById("about");
+  let w = document.getElementById("work");
 
   $("#illustration-button").click(function(){
-    var x = document.getElementById("illustrations");
-    if (x.style.display === "none" || x.style.display === "") {
-      x.style.display = "block";
+    if (i.style.display === "none" || i.style.display === "") {
+      i.style.display = "block";
       $("#illustration-button").addClass("active-box");
+      if(a.style.display === "block") {
+        a.style.display = "none";
+        $("#about-button").removeClass("active-box");
+      }
     } else {
-      x.style.display = "none";
+      i.style.display = "none";
       $("#illustration-button").removeClass("active-box");
     }
   });
 
+  $("#about-button").click(function(){
+    if (a.style.display === "none" || a.style.display === "") {
+      a.style.display = "block";
+      $("#about-button").addClass("active-box");
+      if(i.style.display === "block") {
+        i.style.display = "none";
+        $("#illustration-button").removeClass("active-box");
+      }
+    } else {
+      a.style.display = "none";
+      $("#about-button").removeClass("active-box");
+    }
+  });
+
 });
+
+function closeAbout(){
+  document.getElementById('about').style.display = "none";
+  $("#about-button").removeClass("active-box");
+}
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
